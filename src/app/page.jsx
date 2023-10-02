@@ -3,7 +3,7 @@ import TableComponent from "../components/TableComponent";
 import { prisma } from "@/libs/prisma";
 
 async function getProducts() {
-  const products = await prisma.product.findMany();
+  const products = await prisma.products.findMany();
   console.log(products);
   return products;
 }
